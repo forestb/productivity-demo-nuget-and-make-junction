@@ -33,9 +33,10 @@ This example assumes the LevelUp C# SDK exists at `C:\Projects\LevelUp\levelup-s
 
 Building the project results in NuGet packages available at `C:\Projects\LevelUp\levelup-sdk-csharp\artifacts\`.
 
-Create the symbolic link, adding the project output to your local NuGet feed:
+Create the junction:
 
 ```powershell
+# Creates a symbolic link at C:\nuget\levelup-sdk-csharp which points to the current working directory
 C:\Projects\LevelUp\levelup-sdk-csharp\artifacts > Make-Junction "C:\nuget\levelup-sdk-csharp"
 ```
 
